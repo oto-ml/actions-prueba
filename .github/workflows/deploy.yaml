@@ -1,0 +1,13 @@
+name: 'deploy_cf'
+on:
+  push:
+    branches: ["main"]
+
+jobs:
+  deploy_cf:
+    runs-on: ubuntu-latest
+    steps:
+      run: echo "Hacemos pull de codigo"
+      run: echo "Correr migraciones"
+      run: echo "Correr tests"
+      run: echo "Correr linter"

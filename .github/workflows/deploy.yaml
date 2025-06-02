@@ -7,8 +7,8 @@ jobs:
   deploy_cf:
     runs-on: ubuntu-latest
     steps:
-      use: actions/checkout@v4
-      run: echo "Hacemos pull de codigo"
-      run: echo "Correr migraciones"
-      run: echo "Correr tests"
-      run: echo "Correr linter"
+      - uses: actions/checkout@v4
+      - run: echo "Hacemos pull de codigo"
+      - run: echo "Correr migraciones"
+      - run: echo "Correr tests"
+      - run: echo "Correr linter"
